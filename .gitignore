@@ -1,0 +1,23 @@
+# Datasets (each machine has its own copy, see README)
+NWPU-RESISC45/
+UCMerced*/
+*.zip
+*.rar
+
+# Environments and IDE
+.venv/
+venv/
+.idea/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Training outputs (weights and exports are shared via the NAS, not git)
+runs/
+checkpoints/
+logs/
+*.keras
+*.h5
+*.tflite
+*.tfrecord
+tfdata_cache*

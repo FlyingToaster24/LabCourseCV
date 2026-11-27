@@ -1,0 +1,6 @@
+# Same as pyproject.toml, for pip users. tf-keras must match the TensorFlow minor version.
+tensorflow==2.21.*
+tf-keras==2.21.*
+tensorflow-model-optimization==0.8.1
+matplotlib
+pyyaml

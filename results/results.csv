@@ -1,0 +1,1 @@
+date,exp_id,owner,method,variant,split,top1,top5,macro_f1,params,size_mb,latency_pc_ms,latency_device_ms,acc_corruptions_mean,acc_ucmerced,config,notes

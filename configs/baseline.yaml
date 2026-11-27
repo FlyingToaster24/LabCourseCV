@@ -1,0 +1,32 @@
+# Baseline v1: the fixed reference every method is compared against (plan, Step 2).
+# Only values that differ from the defaults in src/config.py need to be listed;
+# they are all written out here so the recipe is visible in one place.
+
+exp_id: baseline_v1
+owner: team
+method: baseline
+notes: Fixed baseline recipe from the project plan
+seed: 42
+
+data:
+  img_size: 224
+  batch_size: 64
+  augment: none
+  mix: none
+
+model:
+  arch: mobilenet_v2
+  alpha: 1.0
+  weights: imagenet
+  dropout: 0.2
+
+train:
+  head_epochs: 5          # phase A: backbone frozen
+  head_lr: 1.0e-3
+  epochs: 15              # phase B: whole network, early stopping on val loss
+  lr: 1.0e-4
+  optimizer: adam
+  schedule: constant
+  label_smoothing: 0.0
+  unfreeze: all
+  early_stopping_patience: 3

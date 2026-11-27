@@ -1,0 +1,12 @@
+{
+  "source": "random",
+  "official_url": null,
+  "seed": 42,
+  "counts": {
+    "train": 18900,
+    "val": 6300,
+    "test": 6300
+  },
+  "num_classes": 45,
+  "created": "2026-11-26"
+}
